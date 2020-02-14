@@ -1,8 +1,11 @@
+#pragma once
+
 #include <QMainWindow>
 
 namespace DemoUI {
 class MainPanel;
-class MainWindow : public QMainWindow {
+class MainWindow : public QMainWindow
+{
     Q_OBJECT
 
 public:

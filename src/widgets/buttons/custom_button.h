@@ -1,7 +1,10 @@
+#pragma once
+
 #include <QPushButton>
 
 namespace DemoUI {
-class CustomButton : public QPushButton {
+class CustomButton : public QPushButton
+{
     Q_OBJECT
 
 public:

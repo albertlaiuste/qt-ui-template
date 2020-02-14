@@ -1,9 +1,12 @@
+#pragma once
+
 #include <QWidget>
 
 namespace DemoUI {
 class CustomButton;
 class CustomTextEdit;
-class MainPanel : public QWidget {
+class MainPanel : public QWidget
+{
     Q_OBJECT
 
 public:

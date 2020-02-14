@@ -1,7 +1,10 @@
+#pragma once
+
 #include <QTextEdit>
 
 namespace DemoUI {
-class CustomTextEdit : public QTextEdit {
+class CustomTextEdit : public QTextEdit
+{
     Q_OBJECT
 
 public:
