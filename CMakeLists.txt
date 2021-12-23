@@ -1,8 +1,8 @@
 #-------------------------------------------------------------------------------
 #	CMAKE SETTINGS
 #-------------------------------------------------------------------------------
-cmake_minimum_required(VERSION 3.16.0)
-set(QT_MINIMUM_VERSION 5.14.1)
+cmake_minimum_required(VERSION 3.21.1)
+set(QT_MINIMUM_VERSION 6.2.2)
 #-------------------------------------------------------------------------------
 #	SOURCE CODE
 #-------------------------------------------------------------------------------
@@ -13,14 +13,14 @@ file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
 #-------------------------------------------------------------------------------
 set(TARGET_NAME qt-ui-template)
 set(PROJECT_NAME ${TARGET_NAME})
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(${PROJECT_NAME} LANGUAGES CXX)
 #-------------------------------------------------------------------------------
 #	Qt SETTINGS
 #-------------------------------------------------------------------------------
 # Required Qt settings
-set(QtPath "C:\\Qt\\5.14.1\\mingw73_64")
+set(QtPath "C:\\Qt\\6.2.2\\mingw_64")
 
 set(CMAKE_PREFIX_PATH ${QtPath})
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -28,9 +28,9 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
 # Find the necessary Qt5 modules
-find_package(Qt5Core REQUIRED)
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Widgets REQUIRED)
+find_package(Qt6Core REQUIRED)
+find_package(Qt6Gui REQUIRED)
+find_package(Qt6Widgets REQUIRED)
 #-------------------------------------------------------------------------------
 #	SOURCE GROUPS
 #-------------------------------------------------------------------------------
@@ -41,9 +41,9 @@ source_group(headers REGULAR_EXPRESSION ".*[.]h")
 #	ADDITIONAL LIBRARIES
 #-------------------------------------------------------------------------------
 list(APPEND LIBRARIES
-Qt5::Core
-Qt5::Gui
-Qt5::Widgets
+Qt6::Core
+Qt6::Gui
+Qt6::Widgets
 )
 #-------------------------------------------------------------------------------
 #	GENERATE EXECUTABLE
